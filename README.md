@@ -1,10 +1,10 @@
-# 🧠 TextCleaner & Classifier — NLP + Neural Network Sentiment Analyzer
+# TextCleaner & Classifier — NLP + Neural Network Sentiment Analyzer
 
 A console-based Python application that classifies customer feedback as **positive** or **negative** using Natural Language Processing (NLP) and a simple neural network.
 
 ---
 
-## 🎯 Project Goal
+## Project Goal
 
 Demonstrate a complete machine learning pipeline for sentiment classification, including:
 
@@ -16,7 +16,7 @@ Demonstrate a complete machine learning pipeline for sentiment classification, i
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Python 3.x**
 - **NLTK** – for tokenization, stopword removal, and lemmatization
@@ -26,7 +26,7 @@ Demonstrate a complete machine learning pipeline for sentiment classification, i
 
 ---
 
-## 🧼 Preprocessing Pipeline
+## Preprocessing Pipeline
 
 The following steps are applied to each input text:
 
@@ -38,7 +38,7 @@ The following steps are applied to each input text:
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 A simple feedforward neural network built using Keras:
 
