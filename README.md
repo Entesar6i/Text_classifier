@@ -1,46 +1,48 @@
 # 🧠 TextCleaner & Classifier — NLP + Neural Network Sentiment Analyzer
 
-A console-based Python program that classifies customer feedback as **positive** or **negative** using Natural Language Processing (NLP) and a simple feedforward neural network. Developed as a graduation project for the Sprints.ai Bootcamp.
+A console-based Python application that classifies customer feedback as **positive** or **negative** using Natural Language Processing (NLP) and a simple neural network.
 
 ---
 
-## 🎯 Project Objective
+## 🎯 Project Goal
 
-Simulate a real-world AI workflow that:
-- Cleans and normalizes raw text using NLTK
-- Converts text into numeric features using Bag of Words (BoW)
-- Trains a binary classifier using a feedforward neural network (TensorFlow/Keras)
-- Evaluates and predicts sentiment from new user input in real time via the terminal
+Demonstrate a complete machine learning pipeline for sentiment classification, including:
+
+- Cleaning and normalizing raw text
+- Converting text into numeric vectors using Bag of Words (BoW)
+- Training a binary classifier using a basic feedforward neural network
+- Evaluating and testing the model
+- Accepting real-time text input via the command line
 
 ---
 
 ## 🧰 Tech Stack
 
 - **Python 3.x**
-- **NLTK** – Tokenization, stopword removal, lemmatization
-- **NumPy** & **Pandas** – Array and data handling
-- **scikit-learn** – Train-test splitting, accuracy
-- **TensorFlow / Keras** – Neural network model
+- **NLTK** – for tokenization, stopword removal, and lemmatization
+- **NumPy**, **Pandas** – data handling
+- **Scikit-learn** – accuracy scoring, data splitting
+- **TensorFlow / Keras** – neural network implementation
 
 ---
 
-## 🧼 Preprocessing Steps
+## 🧼 Preprocessing Pipeline
 
-Each feedback message goes through:
+The following steps are applied to each input text:
 
-1. Lowercasing
-2. Removing punctuation and digits
-3. Tokenization (via `nltk.word_tokenize`)
-4. Stopword removal (NLTK's stopword list)
-5. Lemmatization (NLTK’s `WordNetLemmatizer`)
+1. Convert to lowercase  
+2. Remove punctuation and digits  
+3. Tokenize into words (`nltk.word_tokenize`)  
+4. Remove English stopwords  
+5. Lemmatize tokens using WordNet  
 
 ---
 
 ## 🧠 Model Architecture
 
-A simple binary classifier with:
+A simple feedforward neural network built using Keras:
 
-- **Input Layer:** Size = vocabulary length (from BoW)
+- **Input Layer:** Size of vocabulary from BoW
 - **Hidden Layer:** `Dense(16, activation='relu')`
 - **Output Layer:** `Dense(1, activation='sigmoid')`
 
@@ -49,6 +51,7 @@ A simple binary classifier with:
 - Optimizer: `adam`
 - Epochs: 20
 - Batch Size: 4
+- Metric: Accuracy
 
 
 
